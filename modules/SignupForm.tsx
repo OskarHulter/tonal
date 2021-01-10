@@ -3,7 +3,7 @@ import { Flex } from '@chakra-ui/react'
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout: FC = ({ children, ...rest }) =>
+const SignupForm: FC = ({ children, ...rest }) =>
   <Flex
     direction="column"
     align="center"
@@ -11,9 +11,7 @@ const Layout: FC = ({ children, ...rest }) =>
     m="0 auto"
     {...rest}
   >
-    <Header />
     {children}
-    <Footer />
   </Flex>
 
-export default Layout
+export default SignupForm 
