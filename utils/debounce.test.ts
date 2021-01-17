@@ -1,10 +1,6 @@
-import { debounce } from "./debounce"
+import { debounce } from './debounce'
 
-const FIXED_SYSTEM_TIME = "2020-01-12T00:00:00Z"
-
-const ms = 818035920000
-
-describe("debounce", () => {
+describe('debounce', () => {
 
   beforeEach(() => {
     jest.useFakeTimers('modern')
