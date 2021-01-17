@@ -1,10 +1,10 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Layout from '../modules/Layout'
+import Layout from '../modules/Layout/Layout'
 
 export default {
   title: 'Layout',
   component: Layout,
 } as Meta
 
-const Template: Story = () => <Layout />
+export const Template: Story = () => <Layout />

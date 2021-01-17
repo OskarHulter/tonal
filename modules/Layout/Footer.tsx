@@ -1,7 +1,7 @@
-import { FC, useState } from 'react'
-import { Box, Flex, Text, Button, Stack } from '@chakra-ui/react'
+import { FC } from 'react'
+import { Flex } from '@chakra-ui/react'
 
-const Footer = ({ ...rest }) =>
+const Footer: FC = ({ ...rest }) =>
   <Flex
     as="footer"
     align="center"
@@ -11,12 +11,12 @@ const Footer = ({ ...rest }) =>
     mb={8}
     p={8}
     bg={["primary.500", "primary.500", "transparent", "transparent"]}
-    color={["white", "white", "primary.700", "primary.700"]}
+    color={["red", "red", "primary.700", "primary.700"]}
     {...rest}
   >
     <Flex align="center">
       copywrite
-      </Flex>
+    </Flex>
   </Flex>
 
 export default Footer

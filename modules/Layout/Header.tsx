@@ -1,11 +1,11 @@
 import { FC, useState } from 'react'
-import { Box, Flex, Text, Button, Stack } from '@chakra-ui/react'
-import Logo from './Logo'
-import MenuItems from './MenuItems'
+import { Box, Flex, Button } from '@chakra-ui/react'
+import Logo from '../Logo'
+import MenuItems from '../MenuItems'
 // import { CloseIcon, MenuIcon } from ".../Icons"
 
 
-const Header = ({ ...rest }) => {
+const Header: FC = ({ ...rest }) => {
   const [show, setShow] = useState(false)
   const toggleMenu = () => setShow(!show)
 

@@ -1,13 +1,13 @@
 import { FC } from 'react'
 import Link from 'next/link'
-import { Box, Button, Flex, Image, Heading, Stack, Text, } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
 
 const Hero: FC<Props> = ({
-  title = `Oskar Hulter's Blog`,
-  subtitle = `Simple deep dives in web dev`,
+  title = `Web Dev Blog`,
+  subtitle = `by Oskar Hulter`,
   image = `https://source.unsplash.com/collection/404339/800x600`,
-  ctaLink = `/signup`,
-  ctaText = `Create you account now`,
+  ctaLink = `/about`,
+  ctaText = `about`,
   ...rest
 }) =>
   <Flex
@@ -45,9 +45,10 @@ const Hero: FC<Props> = ({
       >
         {subtitle}
       </Heading>
+
       <Link href={ctaLink}>
         <Button
-          colorScheme="primary"
+          color="primary.800"
           borderRadius="8px"
           py="4"
           px="4"
@@ -57,6 +58,7 @@ const Hero: FC<Props> = ({
           {ctaText}
         </Button>
       </Link>
+
       <Text
         fontSize="xs"
         mt={2}
@@ -64,8 +66,9 @@ const Hero: FC<Props> = ({
         color="primary.800"
         opacity="0.6"
       >
-        No credit card required.
-        </Text>
+        Fullstack web developer that enjoys simplifying web dev concepts.
+        Currently working at Sigma Consulting.
+      </Text>
     </Stack>
     <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
       <Image src={image} size="100%" rounded="1rem" shadow="2xl" />

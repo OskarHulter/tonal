@@ -1,11 +1,14 @@
 import { FC } from 'react'
-import Head from 'next/head'
-import Layout from '../modules/Layout'
-import { Button } from '@chakra-ui/react'
+import Layout from '../modules/Layout/Layout'
 import Hero from '../modules/Hero'
+import ThemeToggler from '../modules/ThemeToggler'
 
 const Index: FC = () =>
-  <Layout>
+  <Layout
+    pageTitle='Oskar Hulter - Web Dev Blog'
+    description='Oskar Hulters blog about web development.'
+  >
+    <ThemeToggler />
     <Hero />
   </Layout>
 
