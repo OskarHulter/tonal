@@ -3,11 +3,11 @@ import { debounce } from "./debounce"
 const FIXED_SYSTEM_TIME = "2020-01-12T00:00:00Z"
 
 const ms = 818035920000
-jest.useFakeTimers('modern')
 
 describe("debounce", () => {
 
   beforeEach(() => {
+    jest.useFakeTimers('modern')
     jest.setSystemTime(Date.now())
   })
 
