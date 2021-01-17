@@ -3,11 +3,15 @@ import { debounce } from './debounce'
 describe('debounce', () => {
 
   beforeEach(() => {
-    jest.useFakeTimers('modern')
-    jest.setSystemTime(Date.now())
+    jest.useFakeTimers('legacy')
+  })
+
+  afterEach(() => {
+    jest.useRealTimers()
   })
 
   test("it properly debounces function", () => {
+
     const func = jest.fn()
     const debouncedFunction = debounce(func, 100)
 

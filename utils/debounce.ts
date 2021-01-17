@@ -1,16 +1,7 @@
-export type Procedure = (...args: any[]) => void
+import { DebouncedFunction, DebounceOptions, DebounceProcedure } from '@/types/types'
 
-export type DebounceOptions = {
-  isImmediate?: boolean
-  maxWait?: number
-}
 
-export interface DebouncedFunction<F extends Procedure> {
-  (this: ThisParameterType<F>, ...args: Parameters<F>): void
-  cancel: () => void
-}
-
-export function debounce<F extends Procedure>(
+export function debounce<F extends DebounceProcedure>(
   func: F,
   waitMilliseconds = 50,
   options: DebounceOptions = {}

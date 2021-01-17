@@ -1,4 +1,7 @@
- module.exports = {
+/** @typedef {import('ts-jest/dist/types')} */
+/** @type {import('@jest/types').Config.InitialOptions} */ 
+ 
+ const config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   transform: {
@@ -7,3 +10,5 @@
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 }
+
+module.exports = config

@@ -1,13 +1,6 @@
-import React, { FC, useContext, ReactNode, createContext } from 'react'
+import { MotorState, MotorUpdate } from '@/types/types'
+import { FC, useContext, ReactNode, createContext } from 'react'
 import { useImmer } from 'use-immer'
-
-export type MotorState = {
-  readonly name: string
-}
-
-export type MotorUpdate = {
-  setName?: (_: string) => void
-}
 
 const defaultState: MotorState = {
   name: 'Sun Tzu'

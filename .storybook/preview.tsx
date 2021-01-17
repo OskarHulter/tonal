@@ -1,7 +1,7 @@
 import { addDecorator } from '@storybook/react'
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import { theme } from '../modules/theme'
+import { theme } from '@/modules/Theme/theme'
 import { Story } from '@storybook/react/types-6-0'
 
 

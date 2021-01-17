@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import { Box, Flex, Button } from '@chakra-ui/react'
-import Logo from '../Logo'
-import MenuItems from '../MenuItems'
+import Logo from '@/modules/Reusable/Logo'
+import MenuItems from '@/modules/Menu/MenuItems'
 // import { CloseIcon, MenuIcon } from ".../Icons"
 
 

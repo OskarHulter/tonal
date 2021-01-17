@@ -1,8 +1,7 @@
-import { Box, Flex, Text, Button, Stack } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import React from 'react'
 import Link from 'next/link'
 // import Logo from '../ui/Logo'
-
 // import { CloseIcon, MenuIcon } from '.../Icons'
 
 

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Layout from '../modules/Layout/Layout'
-import Hero from '../modules/Hero'
-import ThemeToggler from '../modules/ThemeToggler'
+import Hero from '@/modules/Hero/Hero'
+import ThemeToggler from '@/modules/Theme/ThemeToggler'
 
 const Index: FC = () =>
   <Layout
