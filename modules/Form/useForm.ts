@@ -1,8 +1,6 @@
-import { ChangeEvent, FormEvent, useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import { useImmer } from 'use-immer'
 import { useMotorSalesFlow } from '../Store/MotorSalesFlow'
-
-
 
 type Error = {
   message: string
@@ -122,7 +120,7 @@ function useInput(
     const { name, value, min } = target
     update({ name, value })
   }
-
+  // handle subit ska ersättas, lämnar den bara här som ett exempel på hur den kan ändra en flagga för att trigga en useEffect
   function handleSubmit(): void {
     updateErrorMessage()
     setIsValid(true)
