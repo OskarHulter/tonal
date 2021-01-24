@@ -1,15 +1,23 @@
 import { FC } from 'react'
-import Layout from '../modules/Layout/Layout'
 import Hero from '@/modules/Hero/Hero'
 import ThemeToggler from '@/modules/Theme/ThemeToggler'
+import { posts } from '@/utils/getAllPosts'
+import { Post } from '@/modules/Post/Post'
 
 const Index: FC = () =>
-  <Layout
-    pageTitle='Oskar Hulter - Web Dev Blog'
-    description='Oskar Hulters blog about web development.'
-  >
+  <>
     <ThemeToggler />
     <Hero />
-  </Layout>
+    {posts.map(({ link, meta })=>
+      <Post 
+        key={link} 
+        link={link} 
+        meta={meta}
+      />
+    )}
+  </>
+
+
+
 
 export default Index

@@ -2,11 +2,21 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/modules/*": ["modules/*"],
-      "@/utils/*": ["utils/*"],
-      "@/pages/*": ["pages/*"],
-      "@/public/*": ["public/*"],
-      "@/types/*": ["types/*"],
+      "@/modules/*": [
+        "modules/*"
+      ],
+      "@/utils/*": [
+        "utils/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ],
     },
     "target": "es5",
     "lib": [
@@ -25,18 +35,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "types": ["jest"],
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "types": [
+      "jest"
+    ],
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", 
+    "**/*.tsx",
+    "**/*.mdx",
     "next.config.js"
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts", 
+    "**/*.spec.ts",
     "**/*.test.ts"
   ]
 }

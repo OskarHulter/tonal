@@ -7,4 +7,5 @@ export default {
   component: Layout,
 } as Meta
 
-export const Template: Story = () => <Layout />
+export const Template: Story = () =>
+  <Layout pageTitle='Page title' description='desc.' />

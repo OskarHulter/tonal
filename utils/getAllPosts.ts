@@ -1,10 +1,10 @@
 function importAll(r) {
-  return r.keys().map((fileName) => ({
+  return r.keys().map((fileName: string) => ({
     link: fileName.substr(1).replace(/\/index\.mdx$/, ""),
-    module: r(fileName)
+    meta: r(fileName)
   }))
 }
 
 export const posts = importAll(
-  require.context("./pages/blog/", true, /\.mdx$/)
+  require.context("../pages/blog/", true, /\.mdx$/)
 )
